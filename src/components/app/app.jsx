@@ -9,7 +9,7 @@ const queryClient = new QueryClient();
 export function App() {
     return (
         <QueryClientProvider client={queryClient}>
-            <BrowserRouter>
+            <BrowserRouter basename="/frontend-challenge/">
                 <Routes>
                     <Route element={<Layout />}>
                         <Route index element={<Home />} />
