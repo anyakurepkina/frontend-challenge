@@ -1,0 +1,21 @@
+.button {
+    width: 48px;
+    height: 48px;
+    background-color: transparent;
+    border: none;
+    color: #f24e1e;
+    cursor: pointer;
+}
+
+.button :global(.filling) {
+    opacity: 0;
+}
+
+.button:hover :global(.filling),
+.button.active :global(.filling) {
+    opacity: 1;
+}
+
+.button:active {
+    color: #ff3a00;
+}

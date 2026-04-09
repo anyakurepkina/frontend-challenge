@@ -1,0 +1,20 @@
+.header {
+    background-color: #2196f3;
+    width: 100%;
+    box-shadow: 0px 4px 4px 0px #0000003d;
+    padding: 0 62px;
+}
+
+.link {
+    display: inline-block;
+    padding: 24px;
+    font-size: 14px;
+    color: white;
+    text-decoration: none;
+    opacity: 0.7;
+}
+
+.link:global(.active) {
+    opacity: 1;
+    background-color: #1e88e5;
+}

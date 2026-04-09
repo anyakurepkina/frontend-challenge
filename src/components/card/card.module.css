@@ -1,0 +1,39 @@
+.card {
+    position: relative;
+}
+
+.card::before {
+    opacity: 0;
+    z-index: -1;
+    position: absolute;
+    background: white;
+    width: calc(100% + 32px);
+    height: calc(100% + 32px);
+    transform: translate(-16px, -16px);
+    box-shadow:
+        0px 9px 18px 0px #0000002e,
+        0px 6px 5px 0px #0000003d;
+    content: '';
+}
+
+.card:hover .button {
+    display: block;
+}
+
+.card:hover::before {
+    opacity: 1;
+}
+
+.img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+}
+
+.button {
+    position: absolute;
+    display: none;
+    bottom: 24px;
+    right: 24px;
+}
