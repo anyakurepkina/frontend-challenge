@@ -1,5 +1,3 @@
-// live_K23R96Ap9AX98b3ppq0WwvMiT8669C8uh2P097A1fLbjabIlAKnAE05jdBhPyqbt
-
 import { QueryClient, QueryClientProvider } from '@tanstack/react-query';
 import { BrowserRouter, Route, Routes } from 'react-router';
 import { Favorites } from '../../pages/favorites';
